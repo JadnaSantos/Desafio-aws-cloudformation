@@ -1,5 +1,5 @@
-AWSTemplateFormatVersion: "2010-09-09"
-Description: Backup Storage Bucket
+AWSTemplateFormatVersion: "2025-09-15"
+Description: Challenge for Backup Storage Bucket 
 
 Resources:
   BackupStorageBucket:
@@ -7,7 +7,7 @@ Resources:
 
 Outputs:
   BackupStorageBucketName:
-    Description: Storage bucket for database backup
+    Description: Storage bucket for database backup challenge
     Value: !Ref BackupStorageBucket
     Export:
       Name: !Sub "${AWS::StackName}-BackupStorageBucketName"
